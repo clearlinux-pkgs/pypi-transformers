@@ -7,7 +7,7 @@
 #
 Name     : pypi-transformers
 Version  : 4.37.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/35/96/8eb9dcf772764cdfb29ee0ca23a324b49ec012af1df9e1c01217eb405a84/transformers-4.37.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/35/96/8eb9dcf772764cdfb29ee0ca23a324b49ec012af1df9e1c01217eb405a84/transformers-4.37.1.tar.gz
 Summary  : State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
@@ -86,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1706193151
+export SOURCE_DATE_EPOCH=1706198084
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
