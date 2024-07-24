@@ -6,10 +6,10 @@
 # autospec commit: b5caddc
 #
 Name     : pypi-transformers
-Version  : 4.43.1
-Release  : 21
-URL      : https://files.pythonhosted.org/packages/92/fa/dd1852d0f5b820ecf36ee4442ce3ba37cb10879a7326526ce9c732c9e946/transformers-4.43.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/92/fa/dd1852d0f5b820ecf36ee4442ce3ba37cb10879a7326526ce9c732c9e946/transformers-4.43.1.tar.gz
+Version  : 4.43.2
+Release  : 22
+URL      : https://files.pythonhosted.org/packages/12/73/6f02dd73d2e57ad935edebc18a721d17b52c575a74f7c84cbf3baba52c55/transformers-4.43.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/12/73/6f02dd73d2e57ad935edebc18a721d17b52c575a74f7c84cbf3baba52c55/transformers-4.43.2.tar.gz
 Summary  : State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
 Group    : Development/Tools
 License  : Apache-2.0
@@ -75,10 +75,10 @@ python3 components for the pypi-transformers package.
 
 
 %prep
-%setup -q -n transformers-4.43.1
-cd %{_builddir}/transformers-4.43.1
+%setup -q -n transformers-4.43.2
+cd %{_builddir}/transformers-4.43.2
 pushd ..
-cp -a transformers-4.43.1 buildavx2
+cp -a transformers-4.43.2 buildavx2
 popd
 
 %build
@@ -86,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1721773680
+export SOURCE_DATE_EPOCH=1721848796
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
