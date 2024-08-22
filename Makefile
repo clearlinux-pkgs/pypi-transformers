@@ -1,5 +1,5 @@
 PKG_NAME := pypi-transformers
-URL = https://files.pythonhosted.org/packages/71/46/62e914365ab463addb0357a88f8d2614aae02f1a2b2b5c24c7ee005ff157/transformers-4.44.1.tar.gz
+URL = https://files.pythonhosted.org/packages/f8/a3/81de49357a3c6ac4421d48d9662b53293838f217baf3f3bb9eb55f89fab6/transformers-4.44.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
