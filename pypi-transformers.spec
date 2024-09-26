@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-transformers
-Version  : 4.45.0
-Release  : 34
-URL      : https://files.pythonhosted.org/packages/08/d5/b463d4abded71e226c8c0b4ee446bfb3a69f9b94f602503d3da7fd1174e1/transformers-4.45.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/08/d5/b463d4abded71e226c8c0b4ee446bfb3a69f9b94f602503d3da7fd1174e1/transformers-4.45.0.tar.gz
+Version  : 4.45.1
+Release  : 35
+URL      : https://files.pythonhosted.org/packages/15/1f/4d4c718c178b27268e5b9fa6112ebe82e190b703a984a51b0f743168ed49/transformers-4.45.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/15/1f/4d4c718c178b27268e5b9fa6112ebe82e190b703a984a51b0f743168ed49/transformers-4.45.1.tar.gz
 Summary  : State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
 Group    : Development/Tools
 License  : Apache-2.0
@@ -23,10 +23,11 @@ BuildRequires : buildreq-distutils3
 %define debug_package %{nil}
 
 %description
-<!---
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright 2020 The HuggingFace Team. All rights reserved.
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
 
 %package bin
 Summary: bin components for the pypi-transformers package.
@@ -75,10 +76,10 @@ python3 components for the pypi-transformers package.
 
 
 %prep
-%setup -q -n transformers-4.45.0
-cd %{_builddir}/transformers-4.45.0
+%setup -q -n transformers-4.45.1
+cd %{_builddir}/transformers-4.45.1
 pushd ..
-cp -a transformers-4.45.0 buildavx2
+cp -a transformers-4.45.1 buildavx2
 popd
 
 %build
@@ -86,7 +87,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727297203
+export SOURCE_DATE_EPOCH=1727381035
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
